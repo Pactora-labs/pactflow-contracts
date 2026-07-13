@@ -1,0 +1,11 @@
+/home/yahia008/mikelmonie/pactflow-contracts/target/debug/deps/semver-8df376fdf3e9a150.d: /home/yahia008/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.28/src/lib.rs /home/yahia008/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.28/src/display.rs /home/yahia008/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.28/src/error.rs /home/yahia008/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.28/src/eval.rs /home/yahia008/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.28/src/identifier.rs /home/yahia008/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.28/src/impls.rs /home/yahia008/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.28/src/parse.rs
+
+/home/yahia008/mikelmonie/pactflow-contracts/target/debug/deps/libsemver-8df376fdf3e9a150.rmeta: /home/yahia008/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.28/src/lib.rs /home/yahia008/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.28/src/display.rs /home/yahia008/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.28/src/error.rs /home/yahia008/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.28/src/eval.rs /home/yahia008/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.28/src/identifier.rs /home/yahia008/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.28/src/impls.rs /home/yahia008/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.28/src/parse.rs
+
+/home/yahia008/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.28/src/lib.rs:
+/home/yahia008/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.28/src/display.rs:
+/home/yahia008/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.28/src/error.rs:
+/home/yahia008/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.28/src/eval.rs:
+/home/yahia008/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.28/src/identifier.rs:
+/home/yahia008/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.28/src/impls.rs:
+/home/yahia008/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/semver-1.0.28/src/parse.rs:

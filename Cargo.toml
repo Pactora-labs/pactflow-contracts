@@ -1,0 +1,17 @@
+[workspace]
+resolver = "2"
+members = [
+    "contracts/escrow",
+    "contracts/milestone",
+    "contracts/treasury",
+    "contracts/reputation",
+    "contracts/arbitration",
+]
+
+[profile.release]
+opt-level = "z"
+overflow-checks = true
+debug = false
+panic = "abort"
+lto = true
+codegen-units = 1
