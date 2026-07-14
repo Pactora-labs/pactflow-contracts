@@ -1,5 +1,5 @@
 #![no_std]
-use soroban_sdk::{contract, contractimpl, contracttype, Address, Env, token, Vec};
+use soroban_sdk::{contract, contractimpl, contracttype, Address, Env, token};
 
 /// Protocol fee in basis points (e.g. 100 = 1%)
 const DEFAULT_FEE_BPS: u32 = 100;
@@ -38,8 +38,11 @@ impl TreasuryContract {
     }
 
     /// Collect a protocol fee from an escrow contract.
-    /// The escrow contract calls this during payment release.
-    pub fn collect_fee(env: Env, token_addr: Address, gross_amount: i128) -> i128 {
+    /// `caller` is the escrow contract address that is paying the fee.
+    /// The caller must have pre-authorized the transfer via `token.approve()`.
+    pub fn collect_fee(env: Env, token_addr: Address, gross_amount: i128, caller: Address) -> i128 {
+        caller.require_auth();
+
         let fee_bps: u32 = env.storage().instance().get(&DataKey::FeeBps).unwrap_or(DEFAULT_FEE_BPS);
         let fee = (gross_amount * fee_bps as i128) / 10_000;
         if fee <= 0 {
@@ -47,8 +50,7 @@ impl TreasuryContract {
         }
 
         let token_client = token::Client::new(&env, &token_addr);
-        // Fee is transferred by the caller (escrow contract) before this call
-        token_client.transfer(&env.invoker(), &env.current_contract_address(), &fee);
+        token_client.transfer(&caller, &env.current_contract_address(), &fee);
 
         // Track total collected per token
         let key = DataKey::TotalCollected(token_addr);
